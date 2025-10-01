@@ -48,7 +48,7 @@ header{
     justify-content: space-between;
     justify-items: center;
     align-items: center;
-    width: 1300px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 .header-title{
@@ -145,6 +145,7 @@ text-align: left;
 .card-section{
     max-width: 1300px;
     margin: 0 auto;
+    text-align: center;
 }
 .card-section-title{
     color: rgba(0, 0, 0, 1);
@@ -208,6 +209,112 @@ text-align: center;
     margin-top: 50px;
     margin-bottom: 50px;
 }
+.arrow{
+    color: #ffffff;
+    background-color: orange;
+    padding: 17px 22px;
+    padding-bottom: 20px;
+    padding-top: 22px;
+    padding-right: 45px;
+    border: none;
+    height: 60px;
+    width: 60px;
+    font-size: 3rem;
+    border-radius: 30px;
+    /* text-align: center; */
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+.arrow:hover{
+    background-color: rgb(240, 226, 105);
+    border-radius: 50px;
+}
+.arrow-botton{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin: 0 auto;
+    margin-left: 45%;
+}
+
+
+/* footer section styles */
+.footer-section{
+    background: rgba(1, 172, 253, 1);
+    height: auto;
+    max-width: 1300px;
+    margin-top: 60px;
+    margin: 0 auto;
+    padding: 5% 10%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.footer-title{
+    color: rgba(255, 255, 255, 1);
+
+font-family: Quicksand;
+font-size: 38px;
+font-weight: 700;
+line-height: 39.51px;
+letter-spacing: 0%;
+text-align: left;
+}
+#footer-logo{
+    height: 82px;
+    width: 75px;
+}
+.footer-img{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 1.32px;
+    margin-bottom: 1px;
+}
+.footer-discription{
+    color: rgba(255, 255, 255, 1);
+
+font-family: Quicksand;
+font-size: 17px;
+font-weight: 400;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: left;
+/* margin-top: 35px; */
+}
+.footer-nav-title{
+    color: rgba(255, 255, 255, 1);
+
+font-family: Quicksand;
+font-size: 24px;
+font-weight: 700;
+line-height: 100%;
+letter-spacing: 0%;
+text-align: left;
+}
+.footer-blog li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+.footer-blog a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.icon-title{
+    color: rgba(255, 255, 255, 1);
+
+font-family: Quicksand;
+font-size: 26px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: left;
+margin-bottom: 30px;
+}
+
 
 /* small device responsive media queary */
 @media screen and (max-width:576px) {
@@ -236,6 +343,12 @@ text-align: center;
         width: 100%;
     }
     .card-container{
+        flex-direction: column;
+    }
+    .arrow-botton{
+        display: none;
+    }
+    .footer-section{
         flex-direction: column;
     }
 }
