@@ -23,6 +23,24 @@
 .text-light{
     color: mediumturquoise;
 }
+#color{
+    background-color: rgb(107, 219, 219);
+}
+.olive{
+    background-color: rgb(164, 214, 64);
+}
+.btn-primary-2{
+    color:rgba(255, 255, 255, 1);
+    border: none;
+    border-radius: 40px;
+    padding: 14px 23px;
+    font-size: 16;
+}
+
+.btn-primary-2:hover{
+    background-color: rgb(75, 172, 75);
+    border-radius: 50px;
+}
 
 .btn-primary{
     font-weight: 600;
@@ -239,7 +257,70 @@ text-align: center;
     margin: 0 auto;
     margin-left: 45%;
 }
+/* story section styles */
+.story-section{
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    max-width: 1200px;
+    display: flex;
+    gap: 19px;
+}
+.big-card-title{
+    color: rgba(0, 0, 0, 1);
 
+font-family: Quicksand;
+font-size: 22px;
+font-weight: 700;
+line-height: 38.35px;
+letter-spacing: 0%;
+text-align: left;
+}
+.big-card-discription{
+    color: rgba(102, 102, 102, 1);
+
+font-family: Raleway;
+font-size: 15px;
+font-weight: 500;
+line-height: 28.76px;
+letter-spacing: 0%;
+text-align: left;
+}
+.stor-big-card{
+    text-align: justify;
+    box-shadow: 0 4px 30px 0 lavender;
+}
+.big-card-content{
+    text-align: justify;
+    padding: 30px;
+}
+.button-div{
+    margin-left: 35px;
+    margin-bottom: -30px;
+    margin-top: -25px;
+}
+.mini-card-button{
+    margin-right: 100px;
+    margin-top: -25px;
+}
+.mini-card-content{
+    padding: 20px;
+}
+.card{
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 lavender;
+    text-align: center;
+    border: 1 px solid lavender;
+}
+.story-card-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 19px;
+}
+.view-button{
+    text-align: center;
+    margin-bottom: 60px;
+}
 
 /* footer section styles */
 .footer-section{
@@ -320,9 +401,6 @@ margin-bottom: 30px;
 @media screen and (max-width:576px) {
     nav ul{
         display: none;
-        /* flex-direction: column; */
-        /* background: lightgrey; */
-        /* padding: 10px; */
     }
     .hamburger{
         display: block;
@@ -350,5 +428,12 @@ margin-bottom: 30px;
     }
     .footer-section{
         flex-direction: column;
+    }
+    .stor-big-card{
+        display: none;
+    }
+    .story-card-container{
+        grid-template-columns: 1fr;
+        margin: 0 auto;
     }
 }
