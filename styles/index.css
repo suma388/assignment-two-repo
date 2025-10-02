@@ -323,8 +323,10 @@ text-align: left;
 }
 
 /* footer section styles */
+footer{
+    background-color: rgba(1, 172, 253, 1);
+}
 .footer-section{
-    background: rgba(1, 172, 253, 1);
     height: auto;
     max-width: 1300px;
     margin-top: 60px;
